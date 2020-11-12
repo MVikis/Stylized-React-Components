@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import CardApp from './components/StylizedCards/CardApp'
+import CardApp from './components/Stylized Cards/CardApp'
 
 function App() {
   return (

@@ -1,0 +1,44 @@
+
+.btn-primary{
+    width: auto;
+    height: auto;
+    font-size: calc(12px + 2vmin);
+   
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    min-width: 300px;
+    
+    padding: 10px;
+    margin: 5px;
+  }
+  .btn-primary span{
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    transition: all  0.5s ease;
+  }
+  
+  .btn-primary:hover div {
+    transform-origin: left;
+    width: 100%;
+  }
+  .btn-primary:hover span{
+    color: #282c34;
+  }
+  .btn-primary div{
+   
+  width: 0;
+    z-index: 1;
+  left:0;
+  top: 0;
+    height: 100%;
+    transition: all 0.5s ease;
+    position: absolute;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+  
+    
+  }

@@ -101,7 +101,7 @@ h4, button{
     cursor: pointer;
    
 }
-button{
+.card-button{
    
     width: 90%;
     border-radius: 25px;

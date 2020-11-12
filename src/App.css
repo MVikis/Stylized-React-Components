@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-primary{
+  width: auto;
+  height: auto;
+  font-size: calc(12px + 2vmin);
+  text-align: center;
+  display: inline-block;
+  position: relative;
+ overflow: hidden;
+  cursor: pointer;
+  min-width: 100px;
+  color: white;
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 10px;
+  border:var(--primary-color) 1px solid;
+  transition: all  0.5s ease;
+  margin: 5px;
+}
+
+.btn-primary:hover span{
+  width:400px;
+  height: 400px;
+}
+.btn-primary span{
+  display: block;
+  border: none;
+  transform: translate(-50%,-50%);
+  transition: all 0.5s ease;
+  position: absolute;
+  background: var(--primary-color);
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+}

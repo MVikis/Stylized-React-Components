@@ -16,7 +16,7 @@ export default function Card(props){
  
         function SetPallete(img){
             const { data, loading, error } = usePalette(img)
-            return data.vibrant
+            return data.darkVibrant
         }
    
 
@@ -39,7 +39,7 @@ export default function Card(props){
                      <span onClick={()=>setSrc(props.imgs[1])} style={{background:`${SetPallete(props.imgs[1])}`}}/>
                      <span onClick={()=>setSrc(props.imgs[2])} style={{background:`${SetPallete(props.imgs[2])}`}}/>
                         </div>
-                        <button style={{background:data.vibrant}} >Buy</button>
+                        <div className="card-button" style={{background:data.vibrant, fontWeight:'400'}} >Buy</div>
                     </div>
                 </div>
         </div>
