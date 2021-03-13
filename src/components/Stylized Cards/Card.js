@@ -4,17 +4,17 @@ import  {usePalette} from 'react-palette'
 
 
 
-export default function Card(props){
+export default function Card({imgs, name}){
 
-
-    const [src, setSrc] = useState(props.imgs[0])
-
-    
+   
+    let numberOfImgs = []
+   imgs.forEach((element,index) => {
+       
+       numberOfImgs.push(index)
+   });
+    const [src, setSrc] = useState(imgs[0])
     const { data, loading, error } = usePalette(src)
-    
-    
- 
-        function SetPallete(img){
+   function SetPallete(img){
             const { data, loading, error } = usePalette(img)
             return data.darkVibrant
         }
@@ -28,17 +28,17 @@ export default function Card(props){
                     <div className="circle" style={{background:data.vibrant}}></div>
                     <div className="card-container">
                         <h2>
-                            {props.name}
+                            {name}
                         </h2>
                         <div className="color-flex">
                         <h4>
                             Color:
                             </h4>
-                           
-                     <span onClick={()=>setSrc(props.imgs[0])} style={{background:`${SetPallete(props.imgs[0])}`}}/>
-                     <span onClick={()=>setSrc(props.imgs[1])} style={{background:`${SetPallete(props.imgs[1])}`}}/>
-                     <span onClick={()=>setSrc(props.imgs[2])} style={{background:`${SetPallete(props.imgs[2])}`}}/>
-                        </div>
+                           {numberOfImgs.map((number) => 
+                               <span key={number} onClick={()=>setSrc(imgs[number])} style={{background:`${SetPallete(imgs[number])}`}}/>
+                           )}
+                   
+                        </div> 
                         <div className="card-button" style={{background:data.vibrant, fontWeight:'400'}} >Buy</div>
                     </div>
                 </div>
