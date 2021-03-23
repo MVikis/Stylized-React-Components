@@ -25,7 +25,7 @@ export default function Card({imgs, name}){
         <div className="card">
                 <img src={src} />
                 <div className="card-overlay">
-                    <div className="circle" style={{background:data.vibrant}}></div>
+                    <div className="card-circle" style={{background:data.vibrant}}></div>
                     <div className="card-container">
                         <h2>
                             {name}

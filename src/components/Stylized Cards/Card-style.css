@@ -12,7 +12,7 @@
     background-color: #232323;
     
 }
-.circle{
+.card-circle{
     z-index: 1;
     position: absolute;
     top:0;
@@ -41,7 +41,7 @@ img{
     left: -40px;
     transform:rotateY(180deg) rotateZ(25deg);
 }
-.card:hover .circle{
+.card:hover .card-circle{
     clip-path:circle(200px at 80% -20%);
 }
 .card:hover .card-container{

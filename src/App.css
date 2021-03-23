@@ -46,7 +46,15 @@
     transform: rotate(360deg);
   }
 }
-
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 .btn-primary{
   width: auto;
   height: auto;
@@ -159,7 +167,7 @@
     text-align: center;
     color: var(--text-secondary);
     background: var(--bg-secondary);
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 0.3ch;
     width: 100%;
   }
@@ -171,15 +179,20 @@
   
   .logo-text
   {
+    text-align: start;
+    left: 10px;
+    margin-right: 80px;
     display: inline;
-    font-size: small;
+    font-size: 15px;
     position: absolute;
     left: -999px;
     transition: var(--transition-speed);
   }
   
   .navbar:hover .logo svg {
+    
     transform: rotate(-180deg);
+    font-size: 40px;
   }
   
   /* Small screens */

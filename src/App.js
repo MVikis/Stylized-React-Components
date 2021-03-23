@@ -2,20 +2,29 @@ import React, { useState } from 'react';
 import {Switch, Route, HashRouter} from 'react-router-dom'
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faThList, faClock, faPlusCircle, faCheckCircle, faMinusCircle, faGlobeAfrica, faCalendarDay } from '@fortawesome/free-solid-svg-icons'
+import { faSpinner, faClock, faPlusCircle, faCheckCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons'
 import {Nav} from './components/Nav.js'
 import {Home} from './components/Home'
 import CardApp from './components/Stylized Cards/CardApp'
-library.add( faThList, faClock, faPlusCircle, faCheckCircle, faMinusCircle, faGlobeAfrica, faCalendarDay)
+import {Loader} from './components/Loaders/Loader'
+library.add( faSpinner, faClock, faPlusCircle, faCheckCircle, faMinusCircle)
 
 const links = [
   {
     id:1,
     comp: CardApp,
-    name: 'cardcomp',
+    name: 'Product Card',
     link: '/cardcomp',
     icon: 'clock'
+  },
+  {
+    id:2,
+    comp: Loader,
+    name: 'Loader',
+    link: '/loader',
+    icon: 'spinner'
   }
+
 ]
 
 function App() {
