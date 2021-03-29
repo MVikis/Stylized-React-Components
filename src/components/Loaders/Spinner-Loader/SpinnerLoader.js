@@ -2,11 +2,11 @@ import React from 'react'
 import './S-Loader-style.css'
 const array = [1,2,3]
 
-export const SpinnerLoader = () => {
+export const SpinnerLoader = ({style}) => {
     
     
     return(
-        <div className="loader-container">
+        <div id={style} className="loader-container">
           <div className="circle-container">
               {array.map(index =>
                 <div key={index} className="circle">

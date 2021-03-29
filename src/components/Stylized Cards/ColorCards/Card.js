@@ -4,7 +4,7 @@ import  {usePalette} from 'react-palette'
 
 
 
-export default function Card({imgs, name}){
+export default function Card({style, imgs, name}){
 
    
     let numberOfImgs = []
@@ -22,7 +22,7 @@ export default function Card({imgs, name}){
 
     return(
 
-        <div className="card">
+        <div id={style} className="card color">
                 <img src={src} />
                 <div className="card-overlay">
                     <div className="card-circle" style={{background:data.vibrant}}></div>

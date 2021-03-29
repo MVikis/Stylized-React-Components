@@ -24,28 +24,19 @@
 
 
 .App-header {
+  position: relative;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-weight: 200;
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .row{
   width: 100%;
   display: flex;
@@ -141,6 +132,49 @@
     min-width: 2rem;
     margin: 0 1.5rem;
   }
+  .header{
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .showcase{
+position: relative;
+width: 100%;
+height: 100%;
+
+  }
+ #three-d{
+  perspective: 100px;
+  transform-style: preserve-3d;
+  transform: rotateY(31deg) rotateX(351deg) scale(1.5);
+    }
+
+  .title-container{
+    text-align: start;
+    background-color: #282c34;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .main-title{
+    display: block;
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: 50px;
+  }
+  .side-title{
+    font-size: 24px;
+  }
+  .image-container{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-left: 200px solid  #282c34;
+    border-bottom: 100vh solid transparent;
+  }
   
   .fa-primary {
     color: #7ef6ff;
@@ -193,6 +227,11 @@
     
     transform: rotate(-180deg);
     font-size: 40px;
+  }
+  @keyframes slide-in{
+    0%{
+      
+    }
   }
   
   /* Small screens */
@@ -256,6 +295,8 @@
     {
       left: 0px;
     }
-   
+   .App-header{
+    margin-left: 80px;
+   }
   }
   

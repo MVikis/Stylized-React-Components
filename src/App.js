@@ -5,14 +5,14 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faSpinner, faClock, faPlusCircle, faCheckCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons'
 import {Nav} from './components/Nav.js'
 import {Home} from './components/Home'
-import CardApp from './components/Stylized Cards/CardApp'
+import {Cards} from './components/Stylized Cards/Cards'
 import {Loader} from './components/Loaders/Loader'
 library.add( faSpinner, faClock, faPlusCircle, faCheckCircle, faMinusCircle)
 
 const links = [
   {
     id:1,
-    comp: CardApp,
+    comp: Cards,
     name: 'Product Card',
     link: '/cardcomp',
     icon: 'clock'
@@ -31,7 +31,7 @@ function App() {
   const [linksState, setLinks] = useState(links)
   return (
     <HashRouter basename='/'>
-    <div className="App">
+    <div id="App" className="App">
       <Nav links={linksState}/>
       <header className="App-header">
         
