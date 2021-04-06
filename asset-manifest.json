@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Stylized-React-Components/static/css/main.3e0b02bd.chunk.css",
-    "main.js": "/Stylized-React-Components/static/js/main.c0a87e64.chunk.js",
-    "main.js.map": "/Stylized-React-Components/static/js/main.c0a87e64.chunk.js.map",
+    "main.css": "/Stylized-React-Components/static/css/main.e27cb274.chunk.css",
+    "main.js": "/Stylized-React-Components/static/js/main.6b9cc167.chunk.js",
+    "main.js.map": "/Stylized-React-Components/static/js/main.6b9cc167.chunk.js.map",
     "runtime-main.js": "/Stylized-React-Components/static/js/runtime-main.8be642d6.js",
     "runtime-main.js.map": "/Stylized-React-Components/static/js/runtime-main.8be642d6.js.map",
-    "static/js/2.4ce1249f.chunk.js": "/Stylized-React-Components/static/js/2.4ce1249f.chunk.js",
-    "static/js/2.4ce1249f.chunk.js.map": "/Stylized-React-Components/static/js/2.4ce1249f.chunk.js.map",
+    "static/js/2.8a3c9441.chunk.js": "/Stylized-React-Components/static/js/2.8a3c9441.chunk.js",
+    "static/js/2.8a3c9441.chunk.js.map": "/Stylized-React-Components/static/js/2.8a3c9441.chunk.js.map",
     "index.html": "/Stylized-React-Components/index.html",
-    "precache-manifest.8fa78a0f14fc79d62ce95bbc238b93ce.js": "/Stylized-React-Components/precache-manifest.8fa78a0f14fc79d62ce95bbc238b93ce.js",
+    "precache-manifest.a63b792aabbfac56a1dc74851766269f.js": "/Stylized-React-Components/precache-manifest.a63b792aabbfac56a1dc74851766269f.js",
     "service-worker.js": "/Stylized-React-Components/service-worker.js",
-    "static/css/main.3e0b02bd.chunk.css.map": "/Stylized-React-Components/static/css/main.3e0b02bd.chunk.css.map",
-    "static/js/2.4ce1249f.chunk.js.LICENSE.txt": "/Stylized-React-Components/static/js/2.4ce1249f.chunk.js.LICENSE.txt",
+    "static/css/main.e27cb274.chunk.css.map": "/Stylized-React-Components/static/css/main.e27cb274.chunk.css.map",
+    "static/js/2.8a3c9441.chunk.js.LICENSE.txt": "/Stylized-React-Components/static/js/2.8a3c9441.chunk.js.LICENSE.txt",
     "static/media/blueShoe.png": "/Stylized-React-Components/static/media/blueShoe.602045c1.png",
     "static/media/greyShoe.png": "/Stylized-React-Components/static/media/greyShoe.a75b7f37.png",
     "static/media/yellowShoe.png": "/Stylized-React-Components/static/media/yellowShoe.c03aaef8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8be642d6.js",
-    "static/js/2.4ce1249f.chunk.js",
-    "static/css/main.3e0b02bd.chunk.css",
-    "static/js/main.c0a87e64.chunk.js"
+    "static/js/2.8a3c9441.chunk.js",
+    "static/css/main.e27cb274.chunk.css",
+    "static/js/main.6b9cc167.chunk.js"
   ]
 }
